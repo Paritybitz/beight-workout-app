@@ -1,2 +1,0 @@
-def Fun():
-    print ("hello")
