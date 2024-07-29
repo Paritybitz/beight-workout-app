@@ -60,7 +60,7 @@ def posture_check(shoulder, hip, knee, ankle):
         return "Bent", hip_angle, knee_angle
 
 
-### Main Capturing Function ###
+#### Main Capturing Function ####
 pushup_counter = 0
 check_posture = True
 
@@ -75,7 +75,20 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
 
 while cap.isOpened():
     ret, frame = cap.read()
-    cap.read()
+    
+    # Image recoloring
+        # RGB Used in image editing and dislplay applications
+        # BGR used in image proscessing applications
+    image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    image.flags.writeable = False
+
+    results = pose.proscess(image)
+
+    image.flags.writeable = True
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+
+    
+
 
     
     
