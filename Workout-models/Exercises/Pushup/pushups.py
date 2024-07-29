@@ -127,9 +127,6 @@ while cap.isOpened():
         cv2.putText(image, 'Knee Angle: {:.2f}'.format(knee_angle), 
                     (50, 300), 
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 0), 2, cv2.LINE_AA)
-        # cv2.putText(image, 'Reps: {}'.format(posture_status), 
-        #             (50, 50), 
-        #             cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
         
         # Render detections
         mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
@@ -144,14 +141,6 @@ while cap.isOpened():
         # Break the loop if 'q' is pressed
         if cv2.waitKey(10) & 0xFF == ord('q'):
             break
-
-
-    
-    
-    
-    # Break the loop if 'q' is pressed
-    if cv2.waitKey(10) & 0xFF == ord('q'):
-        break
 
 # end video capturing
 cap.release()
