@@ -135,12 +135,13 @@ while cap.isOpened():
         
     except:
         pass
-        # Display the output
-        cv2.imshow('Push-Up Tracker', image)
+    
+    # Display the output
+    cv2.imshow('Push-Up Tracker', image)
 
-        # Break the loop if 'q' is pressed
-        if cv2.waitKey(10) & 0xFF == ord('q'):
-            break
+    # Break the loop if 'q' is pressed
+    if cv2.waitKey(10) & 0xFF == ord('q'):
+        break
 
 # end video capturing
 cap.release()
