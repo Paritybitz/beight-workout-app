@@ -82,7 +82,7 @@ while cap.isOpened():
     image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     image.flags.writeable = False
 
-    results = pose.proscess(image)
+    results = pose.process(image)
 
     image.flags.writeable = True
     image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
