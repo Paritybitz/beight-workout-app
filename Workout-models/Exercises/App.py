@@ -1,4 +1,3 @@
-from pushups import Fun
+import Pushup.pushups as pushup
 
-# print("hello")
-Fun()
+pushup.pushup_tracker()
