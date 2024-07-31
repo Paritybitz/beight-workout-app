@@ -110,7 +110,7 @@ while cap.isOpened():
 
         stage = current_stage(elbow_angle)
 
-        posture_status = posture, hip_angle = posture_check(shoulder, hip, knee, ankle)
+        posture_status = posture, hip_angle, knee_angle = posture_check(shoulder, hip, knee, ankle)
 
         cv2.putText(image, 'Stage: {}'.format(stage), 
                     (50, 100), 
