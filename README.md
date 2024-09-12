@@ -6,7 +6,7 @@
 
 
 
-This project is called BEIGHT. It is a workout app that only focuses on body weight exercises, (the combination of the words 'body' and 'weight' make 'beight'). I have not started this project yet, but I want to have the bare bones set up. 
+This project is called BEIGHT. It is a workout app that only focuses on body weight exercises, (the combination of the words 'body' and 'weight' make 'beight'). I want to have the bare bones set up. So far, I have programmed the Push-up movement.
 more about the product:
 
 <br>
