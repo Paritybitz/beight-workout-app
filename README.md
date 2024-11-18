@@ -1,9 +1,9 @@
 # beight-workout-app
-
+<!-- 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b4ead910-eb0f-4907-9914-31e97b079abe" width="500" />
 </p>
-
+-->
 
 
 This project is called BEIGHT. It is a workout app that only focuses on body weight exercises, (the combination of the words 'body' and 'weight' make 'beight'). I want to have the bare bones set up. So far, I have programmed the Push-up movement, as seen in the graphic above.
